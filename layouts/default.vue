@@ -4,7 +4,7 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <nuxt-link :to="`/`">
-            <a class="navbar-brand" href="/">🌳 HS Trejo Luna Digital Garden 🌳</a>
+            <a class="navbar-brand">🌳 HS Trejo Luna Digital Garden 🌳</a>
           </nuxt-link>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
