@@ -1,9 +1,12 @@
 <template>
-  <Tutorial/>
+  <h1>Hello hstrejoluna</h1>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
-}
+  mounted() {
+    console.log(this.$content)
+
+  }
+}; 
 </script>
