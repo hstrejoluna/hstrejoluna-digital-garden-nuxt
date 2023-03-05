@@ -3,7 +3,7 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">🌳 HS Trejo Luna Digital Garden 🌳</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -14,30 +14,11 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <nuxt-link :to="`/about`">
+                  <a class="nav-link " aria-current="page">About</a>
+                </nuxt-link>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
@@ -45,7 +26,27 @@
     <main>
       <nuxt />
     </main>
-    <footer>
-      <p>&copy; 2022 My Website</p>
+    <footer :id="$style.footer">
+      <p>Copyleft 🄯 2023 guaranteed by GPLv2 license.</p>
+      <div class="f"><span><a href="https://hstrejoluna.com" rel="noopener" target="_blank">HS Trejo
+            Luna</a></span><span>·</span><span> <a href="https://github.com/hstrejoluna/hstrejoluna-music-blog"
+            rel="noopener" target="_blank">Github</a></span></div>
     </footer>
-</div></template>
+  </div>
+</template>
+
+
+<style module>
+/* your CSS code using CSS Modules */
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6.5rem;
+  padding-block: 20px;
+}
+</style>

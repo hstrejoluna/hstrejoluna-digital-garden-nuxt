@@ -1,5 +1,7 @@
 <template>
-    <h1>Hello hstrejoluna</h1>
+  <section class="container pt-5 pb-5">
+    <h1>Welcome!, Choose your topic here</h1>
+  </section>
 </template>
 
 <script>
