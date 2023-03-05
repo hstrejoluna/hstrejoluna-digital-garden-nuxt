@@ -1,7 +1,8 @@
 {
   "name": "hstrejoluna-digital-garden-nuxt",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
+  "license": "GPL-2.0",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
