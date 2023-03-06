@@ -7,7 +7,9 @@
       <a :class="$style.topicBtn">Music 🎸</a>
       <a :class="$style.topicBtn">GNU/Linux 🦬🐧</a>
       <a :class="$style.topicBtn">Web Development 🌐</a>
-      <a :class="$style.topicBtn">Artificial Intelligence 🤖</a>
+      <nuxt-link :class="$style.topicBtn" :to="`/artint`">
+        Artificial Intelligence 🤖
+      </nuxt-link>
       <a :class="$style.topicBtn">Spotify Campaign 🧩</a>
       <a :class="$style.topicBtn">Apps 📱</a>
 
@@ -22,10 +24,10 @@ export default {
 </script>
 
 <style module>
-
-a{
+a {
   text-decoration: none;
 }
+
 .topicButtonsGrid {
   display: flex;
   flex-wrap: wrap;

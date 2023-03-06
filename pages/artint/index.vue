@@ -2,7 +2,7 @@
 export default {
   async asyncData({ $content }) {
     const notes = await $content("notes")
-      .sortBy("publishOn", "desc")
+      .where({ category: { $eq: 'ai' } })
       .fetch();
 
     return {
@@ -24,8 +24,8 @@ export default {
 }
 </script>
 <template>
-  <main>
-    <h1>My Notes</h1>
+  <main class="container pt-5">
+    <h1>My notes about Artificial Intelligence</h1>
     <p v-show="selectedTag">Filtered by: {{ selectedTag }}
       <button @click="selectedTag = ''">Clear</button>
     </p>
@@ -37,10 +37,10 @@ export default {
 
           </nuxt-link>
         </h2>
-        <ul>
+        <!-- <ul>
           <li v-for="tag in note.tags" :key="note.slug + tag" @click="selectedTag = tag">
             {{ tag }}</li>
-        </ul>
+        </ul> -->
       </li>
     </ul>
   </main>

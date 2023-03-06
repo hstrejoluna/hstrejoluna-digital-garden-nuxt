@@ -29,8 +29,7 @@
     <footer :id="$style.footer">
       <p>Copyleft 🄯 2023 guaranteed by GPLv2 license.</p>
       <div class="f"><span><a href="https://hstrejoluna.com" rel="noopener" target="_blank">HS Trejo
-            Luna</a></span><span>·</span><span> <a href="https://github.com/hstrejoluna/hstrejoluna-music-blog"
-            rel="noopener" target="_blank">Github</a></span></div>
+            Luna</a></span></div>
     </footer>
   </div>
 </template>

@@ -1,6 +1,7 @@
 ---
 title: "Nuxt Content"
 publishOn: 2023-03-02T00:00:00
+category: "webdev"
 tags: [ 'nuxt', 'content', 'frontend' ]
 ---
 
