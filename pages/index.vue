@@ -1,25 +1,33 @@
 <template>
-  <section class="homeSection">
+  <header class="homeSection">
     <section class="container pt-5 pb-5 homeTitle">
       <h1>Welcome, Choose your topic here</h1>
     </section>
-    <section :class="$style.topicButtonsGrid" class="container">
-      <a :class="$style.topicBtn">Music 🎸</a>
-      <a :class="$style.topicBtn">GNU/Linux 🦬🐧</a>
-      <a :class="$style.topicBtn">Web Development 🌐</a>
-      <nuxt-link :class="$style.topicBtn" :to="`/artint`">
-        Artificial Intelligence 🤖
-      </nuxt-link>
-      <a :class="$style.topicBtn">Spotify Campaign 🧩</a>
-      <a :class="$style.topicBtn">Apps 📱</a>
-
-    </section>
-  </section>
+    <nav :class="$style.topicButtonsGrid" class="container">
+      <router-link v-for="topic in topics" :key="topic.route" :to="`/${topic.route}`">
+        <button :class="$style.topicBtn" role="button" aria-pressed="false">
+          {{ topic.label }}
+        </button>
+      </router-link>
+    </nav>
+  </header>
 </template>
 
 <script>
 export default {
-  layout: 'default'
+  layout: 'default',
+  computed: {
+    topics() {
+      return [
+        { label: 'Music 🎸', route: 'music' },
+        { label: 'GNU/Linux 🦬🐧', route: 'linux' },
+        { label: 'Web Development 🌐', route: 'webdev' },
+        { label: 'Artificial Intelligence 🤖', route: 'artint' },
+        { label: 'Spotify Campaign 🧩', route: 'spotify' },
+        { label: 'Apps 📱', route: 'apps' },
+      ];
+    },
+  },
 };
 </script>
 
@@ -41,5 +49,12 @@ a {
   text-decoration: none;
   cursor: pointer;
   border-radius: 10px;
+  background-color: transparent;
+}
+
+.topicBtn:hover,
+.topicBtn:focus {
+  color: black;
+  background-color: rgb(255, 255, 255);
 }
 </style>
