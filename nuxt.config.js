@@ -1,6 +1,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: "static",
+  target: "universal",
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -32,7 +32,9 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ["@nuxt/content"],
-  content: [],
+  content: {
+    dir: 'content'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
