@@ -1,5 +1,5 @@
 ---
-title: "My Future and the I.A."
+title: "My groundbreaking changes"
 publishOn: 2023-03-08T18:44:00
 category: "music"
 tags: ["music", "linux"]
