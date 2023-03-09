@@ -4,11 +4,11 @@
       <h1>Welcome, Choose your topic here</h1>
     </section>
     <nav :class="$style.topicButtonsGrid" class="container">
-      <router-link v-for="topic in topics" :key="topic.route" :to="`/${topic.route}`">
+      <a v-for="topic in topics" :key="topic.route" :href="`/${topic.route}`">
         <button :class="$style.topicBtn" role="button" aria-pressed="false">
           {{ topic.label }}
         </button>
-      </router-link>
+      </a>
     </nav>
   </header>
 </template>
