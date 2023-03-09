@@ -3,20 +3,15 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <nuxt-link :to="`/`">
-            <a class="navbar-brand">🌳 HS Trejo Luna Digital Garden 🌳</a>
-          </nuxt-link>
+          <a :href="`/`" class="navbar-brand">🌳 HS Trejo Luna Digital Garden 🌳</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
               <li class="nav-item">
-                <nuxt-link :to="`/about`">
-                  <a class="nav-link">About</a>
-                </nuxt-link>
+                <a :href="`/about`" class="nav-link">About</a>
               </li>
             </ul>
           </div>

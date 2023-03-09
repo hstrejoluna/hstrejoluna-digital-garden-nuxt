@@ -1,5 +1,5 @@
 <template>
-  <header class="homeSection">
+  <section class="homeSection">
     <section class="container pt-5 pb-5 homeTitle">
       <h1>Welcome, Choose your topic here</h1>
     </section>
@@ -10,7 +10,7 @@
         </button>
       </a>
     </nav>
-  </header>
+  </section>
 </template>
 
 <script>
