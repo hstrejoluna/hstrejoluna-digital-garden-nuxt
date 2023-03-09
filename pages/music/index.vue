@@ -2,7 +2,7 @@
 export default {
   async asyncData({ $content }) {
     const notes = await $content("notes")
-      .sortBy("publishOn", "desc")
+      .where({ category: { $eq: 'music' } })
       .fetch();
 
     return {
