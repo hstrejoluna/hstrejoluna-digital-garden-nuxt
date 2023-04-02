@@ -10,9 +10,8 @@ export default {
 </script>
 
 <template>
-  <section class="container pt-5">
+  <main>
     <h1>{{ note.title }}</h1>
     <nuxt-content :document="note" />
-  </section>
-
+  </main>
 </template>

@@ -2,7 +2,7 @@
 export default {
   async asyncData({ $content }) {
     const notes = await $content("notes")
-      .where({ category: { $eq: 'music' } })
+      .where({ category: { $eq: 'gnulinux' } })
       .fetch();
 
     return {
@@ -25,7 +25,7 @@ export default {
 </script>
 <template>
   <section class="container pt-5">
-    <h1>My Notes</h1>
+    <h1>My Notes about GNU/Linux things</h1>
     <p v-show="selectedTag">Filtered by: {{ selectedTag }}
       <button @click="selectedTag = ''">Clear</button>
     </p>

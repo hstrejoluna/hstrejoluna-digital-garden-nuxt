@@ -2,7 +2,6 @@
 export default {
   async asyncData({ $content }) {
     const notes = await $content("notes")
-      .sortBy("publishOn", "desc")
       .fetch();
 
     return {

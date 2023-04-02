@@ -20,9 +20,10 @@ export default {
     topics() {
       return [
         { label: 'Music 🎸', route: 'music' },
-        { label: 'GNU/Linux 🦬🐧', route: 'linux' },
+        { label: 'GNU/Linux 🦬🐧', route: 'gnulinux' },
         { label: 'Web Development 🌐', route: 'webdev' },
         { label: 'Artificial Intelligence 🤖', route: 'artint' },
+        { label: 'Marketing 📢', route: 'marketing' },
         { label: 'Spotify Campaign 🧩', route: 'spotify' },
         { label: 'Apps 📱', route: 'apps' },
       ];
