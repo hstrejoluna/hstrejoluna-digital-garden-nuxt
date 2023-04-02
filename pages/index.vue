@@ -21,7 +21,7 @@ export default {
       return [
         { label: 'Music 🎸', route: 'music' },
         { label: 'GNU/Linux 🦬🐧', route: 'gnulinux' },
-        { label: 'Web Development 🌐', route: 'webdev' },
+        { label: 'Web Development 🌐', route: 'webdevelopment' },
         { label: 'Artificial Intelligence 🤖', route: 'artint' },
         { label: 'Marketing 📢', route: 'marketing' },
         { label: 'Spotify Campaign 🧩', route: 'spotify' },
