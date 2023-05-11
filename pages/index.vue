@@ -24,7 +24,7 @@ export default {
         { label: 'Web Development 🌐', route: 'webdevelopment' },
         { label: 'Artificial Intelligence 🤖', route: 'artint' },
         { label: 'Marketing 📢', route: 'marketing' },
-        { label: 'Poetry And Thougts 📢', route: 'poetry' },
+        { label: 'Poetry And Thougts 📜', route: 'poetry' },
         { label: 'Spotify Campaign 🧩', route: 'spotify' },
         { label: 'Apps 📱', route: 'apps' },
       ];
